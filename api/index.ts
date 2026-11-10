@@ -9,7 +9,7 @@ function getHeader(req: Request, name: string): string | null {
   return req.headers.get(name);
 }
 
-async function handleRequest(req: Request): Promise<Response> {
+export async function handleRequest(req: Request): Promise<Response> {
   const envKeys = process.env.GEMINI_API_KEY || "";
   const GEMINI_KEYS = envKeys
     .split(",")

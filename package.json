@@ -8,6 +8,7 @@
     "typecheck": "bun check",
     "lint": "oxlint",
     "format": "oxfmt",
+    "test": "bun test",
     "prepare": "husky"
   },
   "devDependencies": {

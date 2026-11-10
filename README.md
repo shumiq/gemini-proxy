@@ -33,6 +33,13 @@ bun run lint     # oxlint
 bun run format   # oxfmt (writes in place)
 ```
 
+## Tests
+
+```bash
+bun test            # run unit tests (offline, fetch mocked)
+bun test --coverage # run with coverage
+```
+
 ## Deploy
 
 ```bash

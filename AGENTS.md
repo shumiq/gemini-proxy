@@ -42,4 +42,5 @@ There is no `vercel.json`; Vercel auto-detects `api/index.ts` as the `/api` func
 
 ## Tests
 
-- None. No test files or test scripts exist.
+- `bun test` — runs `api/index.test.ts` (12 unit tests, all offline; `fetch` is mocked).
+- `bun test --coverage` — runs with coverage; `api/index.ts` is at 100% lines/functions.
