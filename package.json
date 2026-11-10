@@ -1,0 +1,29 @@
+{
+  "name": "gemini-proxy",
+  "version": "1.0.0",
+  "private": true,
+  "main": "api/index.ts",
+  "scripts": {
+    "vercel:deploy": "vercel --prod",
+    "typecheck": "bun check",
+    "lint": "oxlint",
+    "format": "oxfmt",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.2",
+    "oxfmt": "^0.78.0",
+    "oxlint": "^1.93.0",
+    "typescript": "^6.0.3",
+    "vercel": "^65.14.0"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,mjs,cjs}": [
+      "bun run typecheck",
+      "bun run lint",
+      "bun run format"
+    ]
+  }
+}
